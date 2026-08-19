@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z3EM6YJGJG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Z3EM6YJGJG');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conferences | Yogeesh N</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="starfield"></canvas>
+    <div class="nebula-layer"><span class="neb-1"></span><span class="neb-2"></span><span class="neb-3"></span></div>
+    <div class="bg-vignette"></div>
+
+    <nav id="nav">
+        <a href="index.html" class="nav-brand">Yogeesh <span>N</span></a>
+        <div class="nav-links">
+            <a href="works.html" class="nav-link nav-works">Works</a>
+            <a href="research.html" class="nav-link nav-research">Research</a>
+            <a href="conferences.html" class="nav-link nav-conf active" style="--current-accent: var(--violet);">Conferences</a>
+            <a href="education.html" class="nav-link nav-edu">Education</a>
+            <a href="contact.html" class="nav-link nav-contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="page-header">
+            <span class="eyebrow" style="color: var(--violet);">Academic service</span>
+            <h1>Conferences</h1>
+            <p class="lede">Organizing, presenting, and participating in the compact-object astrophysics community.</p>
+        </header>
+
+        <div class="conf-block" style="margin-top: 3rem;">
+            <h3 class="headline">COAA-2025: Compact Object Astrophysics and Astronomy</h3>
+            <span class="conf-meta">December 10–12, 2025 · Organizer · IIT Jodhpur</span>
+            <p>I was part of the organizing team for the 1st International Conference on Compact Object Astrophysics and Astronomy (COAA-2025). This conference brought together leading researchers and students to discuss contemporary issues in the physics of ultra-dense matter found inside astrophysical compact objects. Our scientific sessions focused heavily on equations of state, neutron star cooling, gravitational waves, and pulsar phenomena. Alongside the intense academic discussions, we also had the pleasure of sharing the rich cultural heritage of Jodhpur with our colleagues.</p>
+
+            <div class="carousel">
+                <div class="carousel-track" id="conference-track">
+                    <img src="IMG_3596.JPG" alt="COAA-2025 conference attendees" onerror="this.style.background='linear-gradient(135deg, var(--surface), var(--bg-elevated))'">
+                    <img src="IMG_3837.JPG" alt="COAA-2025 participants visiting Mehrangarh Fort" onerror="this.style.background='linear-gradient(135deg, var(--surface), var(--bg-elevated))'">
+                </div>
+                <button class="carousel-btn prev" onclick="moveSlide(-1)" aria-label="Previous photo">&#10094;</button>
+                <button class="carousel-btn next" onclick="moveSlide(1)" aria-label="Next photo">&#10095;</button>
+                <div class="carousel-dots">
+                    <span class="carousel-dot active"></span>
+                    <span class="carousel-dot"></span>
+                </div>
+            </div>
+
+            <a class="glow-btn glow-btn--violet" href="https://sites.google.com/iitj.ac.in/coaa/home" target="_blank" rel="noopener">
+                <span class="blob"></span>
+                <span class="inner">
+                    View conference website
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </span>
+            </a>
+
+            <h3 class="sub-heading">Presentations &amp; Participation</h3>
+            <div class="grid">
+                <div class="card talk-card glow-card" style="--glow-a: var(--violet); --glow-b: var(--accent);">
+                    <h4>Astronomical Society of India (ASI) 2025</h4>
+                    <span class="edu-meta">NIT Rourkela · Poster Presentation</span>
+                    <p>Presented research focusing on high-energy astrophysics, discussing implications of neutron star equations of state and pulsar glitch mechanisms.</p>
+                </div>
+                <div class="card talk-card glow-card" style="--glow-a: var(--teal); --glow-b: var(--violet);">
+                    <h4>RETCO</h4>
+                    <span class="edu-meta">IIT Indore · Poster Presentation</span>
+                    <p>Engaged with recent trends in the study of compact objects, discussing advanced computational models and explosive variations in astrophysical systems.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>designed &amp; built for Yogeesh N · updated 2026</footer>
+
+    <script src="background.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
