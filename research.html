@@ -11,7 +11,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research | Yogeesh N</title>
+    <title>Research & Works | Yogeesh N</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -26,7 +26,6 @@
     <nav id="nav">
         <a href="index.html" class="nav-brand">Yogeesh <span>N</span></a>
         <div class="nav-links">
-            <a href="works.html" class="nav-link nav-works">Works</a>
             <a href="research.html" class="nav-link nav-research active" style="--current-accent: var(--teal);">Research</a>
             <a href="conferences.html" class="nav-link nav-conf">Conferences</a>
             <a href="education.html" class="nav-link nav-edu">Education</a>
@@ -36,31 +35,136 @@
 
     <div class="container">
         <header class="page-header">
-            <span class="eyebrow" style="color: var(--teal);">Current work</span>
-            <h1>Research</h1>
-            <p class="lede">The physics of compact objects — how ultra-dense matter behaves, and what pulsars reveal when that matter suddenly rearranges itself.</p>
+            <span class="eyebrow" style="color: var(--teal);">Astrophysics &amp; Dense Matter</span>
+            <h1>Research &amp; Works</h1>
+            <p class="lede">The physics of compact objects — investigating dense nuclear equations of state, &Delta;-isobar direct Urca neutrino cooling, and core superfluidity in pulsar glitches.</p>
         </header>
 
-        <div class="grid" style="margin-top: 3rem;">
-            <div class="card card--research glow-card" style="--glow-a: var(--teal); --glow-b: var(--violet);">
-                <h3>Pulsar Glitches</h3>
-                <p>This work investigates sudden spin-up events in pulsars. It explores how core superfluidity contributes to vortex pinning and glitch amplitudes, examining the potential role of quark pasta structures on the glitch mechanism.</p>
+        <!-- ==================== Publications & Works Section ==================== -->
+        <section id="works">
+            <div class="section-heading">
+                <span class="eyebrow" style="color: var(--accent);">Peer-reviewed &amp; Preprints</span>
+                <h2>Publications &amp; Works</h2>
+                <p>Articles and preprints investigating pulsar spin-ups, &Delta;-resonance weak interactions, and neutron star thermal evolution.</p>
             </div>
-            <div class="card card--research glow-card" style="--glow-a: var(--accent); --glow-b: var(--copper);">
-                <h3>Equation of State</h3>
-                <p>Modeling the ultra-dense matter inside neutron stars to understand their macroscopic properties, integrating thermodynamic constraints and high-energy particle physics.</p>
-            </div>
-        </div>
 
-        <div class="card card--research card--wide glow-card" style="margin-top: 1.5rem; --glow-a: var(--violet); --glow-b: var(--teal);">
-            <img src="star_structure.png" alt="Cross-section of a neutron star showing number density across the crust, pasta phase, and central core"
-                 onerror="this.style.display='none'">
-            <h3>Neutron Star Interior &amp; EoS</h3>
-            <p>Modeling the ultra-dense matter inside neutron stars to understand their macroscopic properties. The internal structure — from the crystalline crust down to the uniform hadronic or exotic core — dictates the equation of state. The numerical infrastructure utilizes linear interpolation for high-precision TOV solving and tidal deformability modeling across these extreme density gradients.</p>
-        </div>
+            <div class="pub-list">
+                <!-- Work 1: Pulsar Glitches -->
+                <div class="pub glow-card" style="--glow-a: var(--accent); --glow-b: var(--copper); --pub-accent: var(--accent);">
+                    <h3>Modeling Large Glitches with Core Superfluidity in a Hybrid Star</h3>
+                    <div class="pub-meta">
+                        <span class="pub-authors">Yogeesh N, Anil Kumar, Monika Sinha</span>
+                        <span class="pub-journal">Physical Review D 113, 103002 (2026)</span>
+                    </div>
+                    <div class="pub-links">
+                        <a class="pub-btn doi" href="https://doi.org/10.1103/2p7c-mj4x" target="_blank" rel="noopener">
+                            <span>DOI: 10.1103/2p7c-mj4x</span>
+                        </a>
+                        <a class="pub-btn arxiv" href="https://arxiv.org/abs/2605.02467" target="_blank" rel="noopener">
+                            <span>arXiv: 2605.02467</span>
+                        </a>
+                    </div>
+                    <p>This work investigates sudden spin-up events (glitches) in pulsars. It explores how core superfluidity contributes to vortex pinning and glitch amplitudes in a hybrid star, examining the potential role of quark pasta structures at the hadron-quark interface as pinning sites capable of explaining large glitch magnitudes observed in Vela-like pulsars.</p>
+                </div>
+
+                <!-- Work 2: Delta Emissivity -->
+                <div class="pub glow-card" style="--glow-a: var(--violet); --glow-b: var(--teal); --pub-accent: var(--violet);">
+                    <h3>Neutrino Emissivity in &Delta;-Direct-Urca Processes inside Neutron Stars</h3>
+                    <div class="pub-meta">
+                        <span class="pub-authors">Yogeesh N, Monika Sinha, Vishal Parmar</span>
+                        <span class="pub-journal">Physical Review Letters (2026)</span>
+                    </div>
+                    <div class="pub-links">
+                        <a class="pub-btn doi" href="https://doi.org/10.1103/nhl7-9j9z" target="_blank" rel="noopener">
+                            <span>DOI: 10.1103/nhl7-9j9z</span>
+                        </a>
+                        <a class="pub-btn arxiv" href="https://arxiv.org/abs/2610.05244" target="_blank" rel="noopener">
+                            <span>arXiv: 2610.05244</span>
+                        </a>
+                    </div>
+                    <p>This work derives and computes the neutrino emissivity from novel direct Urca channels involving &Delta; isobars (&Delta;<sub>1232</sub>) within relativistic density-dependent hadronic models. The study demonstrates that &Delta;-direct-Urca processes open at accessible core densities and exhibit emissivities on par with or exceeding conventional nucleonic channels, substantially altering the energy-loss budget of compact stars.</p>
+                </div>
+
+                <!-- Work 3: Neutron Star Cooling with Delta -->
+                <div class="pub glow-card" style="--glow-a: var(--teal); --glow-b: var(--accent); --pub-accent: var(--teal);">
+                    <h3>Neutron Star Cooling with &Delta; dUrca Processes</h3>
+                    <div class="pub-meta">
+                        <span class="pub-authors">Yogeesh N, Monika Sinha, Vishal Parmar</span>
+                        <span class="pub-journal">arXiv preprint (2026)</span>
+                    </div>
+                    <div class="pub-links">
+                        <a class="pub-btn arxiv" href="https://arxiv.org/abs/2610.11435" target="_blank" rel="noopener">
+                            <span>arXiv: 2610.11435 [astro-ph.HE]</span>
+                        </a>
+                    </div>
+                    <p>This work conducts comprehensive thermal evolution simulations of neutron stars by coupling &Delta; baryon direct Urca neutrino emissivities with realistic stellar equations of state. The results show that &Delta; dUrca processes provide an efficient cooling pathway that significantly accelerates thermal relaxation, providing a compelling explanation for isolated neutron stars observed with anomalously low surface temperatures.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== Research Areas Section ==================== -->
+        <section id="areas">
+            <div class="section-heading">
+                <span class="eyebrow" style="color: var(--teal);">Research Focus</span>
+                <h2>Core Investigations</h2>
+                <p>Bridging microscopic nuclear many-body theory with macroscopic multi-messenger astrophysical observations.</p>
+            </div>
+
+            <div class="grid">
+                <div class="card card--research glow-card" style="--glow-a: var(--accent); --glow-b: var(--copper);">
+                    <h3>Pulsar Glitches &amp; Superfluidity</h3>
+                    <p>Investigating sudden spin-up events in pulsars through vortex pinning and unpinning dynamics. We explore how core superfluidity and hadron-quark mixed pasta phases influence glitch sizes and post-glitch relaxation timescales.</p>
+                </div>
+                <div class="card card--research glow-card" style="--glow-a: var(--violet); --glow-b: var(--teal);">
+                    <h3>&Delta;-Isobars &amp; Neutrino Emissivity</h3>
+                    <p>Evaluating weak-interaction matrix elements and phase-space integrals when &Delta; resonances emerge at supranuclear densities. We calculate direct Urca emissivity channels that operate efficiently inside massive neutron star cores.</p>
+                </div>
+                <div class="card card--research glow-card" style="--glow-a: var(--teal); --glow-b: var(--accent);">
+                    <h3>Thermal Evolution &amp; Cooling</h3>
+                    <p>Solving the general relativistic equations of thermal transport and energy balance to simulate neutron star cooling curves. We confront cooling simulations against multi-wavelength observations of thermal surface emissions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== Equation of State & Observations ==================== -->
+        <section id="structure">
+            <div class="section-heading">
+                <span class="eyebrow" style="color: var(--violet);">Structure &amp; Constraints</span>
+                <h2>Equation of State &amp; Interior Modeling</h2>
+                <p>Confronting relativistic density-dependent equations of state against astronomical observations from radio pulsars, X-ray timing, and gravitational waves.</p>
+            </div>
+
+            <!-- New Plot Wide Card -->
+            <div class="card card--research card--wide card--plot glow-card" style="--glow-a: var(--teal); --glow-b: var(--violet);">
+                <img src="delta_eos_mr_plot.png" alt="Equation of State: Pressure vs Energy Density and Mass-Radius curves with Delta couplings and observational constraints"
+                     onerror="this.style.display='none'">
+                <h3>Equation of State and Mass&ndash;Radius Relations with &Delta;-Isobars</h3>
+                <p>Relativistic mean-field equations of state with density-dependent couplings (DDME2, DDME1, DDMEX, DD2, DD1) incorporating &Delta; isobars across a parameter space of coupling constants.</p>
+                
+                <div class="plot-caption">
+                    <strong>Figure Analysis:</strong>
+                    <ul style="margin: 0.6rem 0 0 1.2rem; padding: 0;">
+                        <li><strong>Left column (Pressure vs. Energy Density):</strong> Equation of state ($P$ vs. $\varepsilon$) displaying softening due to the onset of &Delta; baryons, with insets highlighting the transition threshold around $300\text{--}500\,\text{MeV}/\text{fm}^3$. Rows from top to bottom illustrate the sensitivity to scalar ($x_{\sigma\Delta} = 1.16, 1.18, 1.20$), vector ($x_{\omega\Delta} = 0.98, 1.00, 1.02$), and isovector ($x_{\rho\Delta} = 0.95, 1.00, 1.05$) coupling ratios.</li>
+                        <li><strong>Right column (Mass vs. Radius):</strong> Solutions of the Tolman-Oppenheimer-Volkoff (TOV) stellar structure equations for the corresponding models, confronted with modern astrophysical constraints:
+                            massive pulsars PSR J0952&minus;0607 ($2.35 \pm 0.17\,M_\odot$), PSR J0740+6620 ($2.08 \pm 0.07\,M_\odot$), PSR J0348+042, and PSR J1614&minus;2230;
+                            NICER simultaneous mass-radius contours for PSR J0030+0451 and PSR J0740+6620; and tidal deformability limits from the binary neutron star merger GW170817.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Interior Structure Wide Card -->
+            <div class="card card--research card--wide glow-card" style="margin-top: 1.5rem; --glow-a: var(--violet); --glow-b: var(--teal);">
+                <img src="star_structure.png" alt="Cross-section of a neutron star showing number density across the crust, pasta phase, and central core"
+                     onerror="this.style.display='none'">
+                <h3>Neutron Star Interior &amp; Density Profile</h3>
+                <p>Modeling the ultra-dense matter inside neutron stars to understand their macroscopic properties. The internal structure &mdash; from the crystalline crust down through nuclear pasta phases to the uniform hadronic or exotic core &mdash; dictates the equation of state. The numerical infrastructure utilizes linear interpolation for high-precision TOV solving and tidal deformability modeling across these extreme density gradients.</p>
+            </div>
+        </section>
+
     </div>
 
-    <footer>designed &amp; built for Yogeesh N · updated 2026</footer>
+    <footer>designed &amp; built for Yogeesh N &middot; updated 2026</footer>
 
     <script src="background.js"></script>
     <script src="main.js"></script>

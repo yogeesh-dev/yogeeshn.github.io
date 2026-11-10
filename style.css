@@ -227,15 +227,43 @@ h1.name { font-family: var(--serif); font-weight: 600; font-size: clamp(2.6rem, 
     transition: border-color 0.35s ease, background 0.35s ease, transform 0.35s ease;
 }
 .pub::before {
-    content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--accent);
+    content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--pub-accent, var(--accent));
     transform: scaleY(0); transform-origin: bottom; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .pub:hover { border-color: var(--border-hover); background: var(--bg-elevated); transform: translateX(4px); }
 .pub:hover::before { transform: scaleY(1); }
-.pub h3 { font-family: var(--serif); font-size: 1.15rem; font-weight: 600; color: #fff; margin-bottom: 0.5rem; }
+.pub h3 { font-family: var(--serif); font-size: 1.15rem; font-weight: 600; color: #fff; margin-bottom: 0.4rem; line-height: 1.4; }
+.pub-meta { display: flex; flex-wrap: wrap; gap: 0.5rem 0.9rem; align-items: center; margin-bottom: 0.5rem; }
+.pub-authors { font-size: 0.86rem; color: #b2b9cb; }
+.pub-journal { font-family: var(--mono); font-size: 0.78rem; color: var(--violet); }
+.pub-links { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.85rem; }
+.pub-btn {
+    display: inline-flex; align-items: center; gap: 0.35rem; font-family: var(--mono); font-size: 0.76rem;
+    padding: 0.3rem 0.75rem; border-radius: 6px; text-decoration: none; border: 1px solid var(--border);
+    transition: all 0.25s ease;
+}
+.pub-btn.doi { color: var(--accent); border-color: rgba(242, 166, 64, 0.35); background: rgba(242, 166, 64, 0.08); }
+.pub-btn.doi:hover { background: var(--accent); color: var(--bg); border-color: var(--accent); text-decoration: none; }
+.pub-btn.arxiv { color: var(--teal); border-color: rgba(95, 217, 199, 0.35); background: rgba(95, 217, 199, 0.08); }
+.pub-btn.arxiv:hover { background: var(--teal); color: var(--bg); border-color: var(--teal); text-decoration: none; }
 .pub .doi { font-family: var(--mono); font-size: 0.78rem; color: var(--accent); text-decoration: none; }
 .pub .doi:hover { text-decoration: underline; }
-.pub p { color: var(--text-muted); font-size: 0.92rem; margin-top: 0.6rem; }
+.pub p { color: var(--text-muted); font-size: 0.92rem; margin-top: 0.6rem; line-height: 1.6; }
+
+.section-heading { margin-top: 3.5rem; margin-bottom: 1.5rem; }
+.section-heading .eyebrow { margin-bottom: 0.4rem; }
+.section-heading h2 { font-family: var(--serif); font-size: 1.8rem; font-weight: 600; color: #fff; margin-bottom: 0.5rem; }
+.section-heading p { color: var(--text-muted); font-size: 0.95rem; max-width: 780px; }
+
+.card--plot img {
+    width: 100%; max-width: 760px; height: auto; margin: 0 auto 1.4rem; display: block;
+    background: #ffffff; padding: 0.75rem; border-radius: 8px; border: 1px solid var(--border);
+}
+.plot-caption {
+    font-size: 0.88rem; color: var(--text-muted); margin-top: 0.8rem; line-height: 1.6;
+    background: rgba(11, 14, 24, 0.6); padding: 1rem 1.2rem; border-radius: 8px; border: 1px solid var(--border);
+}
+.plot-caption strong { color: #fff; }
 
 /* ---------------- education timeline ---------------- */
 .timeline { position: relative; padding-left: 2.2rem; }
